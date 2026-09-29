@@ -1,0 +1,39 @@
+PERBANDINGAN LOCALHOST DAN HOSTING 
+
+Pertemuan ke 5 Pemograman Web III
+
+1. Localhost
+
+Localhost adalah tempat yang digunakan untuk membuat, mengembangkan, dan menguji aplikasi pada komputer sendiri. Pada aplikasi KursusKu, proses ini dapat dilakukan menggunakan Laragon, PHP, dan MySQL.
+
+URL yang digunakan biasanya berupa "localhost" atau "kursusku-prototype.test". File proyek disimpan pada laptop, misalnya di folder "C:\laragon\www". Database menggunakan MySQL lokal yang dijalankan melalui Laragon.
+
+Dalam tahap ini, aplikasi masih berada pada lingkungan development sehingga proses debugging dapat dilakukan dengan lebih leluasa. Error dapat ditampilkan untuk membantu mahasiswa menemukan dan memperbaiki kesalahan pada program.
+
+2. Hosting 
+
+Hosting  merupakan lingkungan ketika aplikasi sudah ditempatkan pada server agar dapat diakses melalui internet. Alamat aplikasi biasanya menggunakan domain atau subdomain, misalnya "kursusku.com".
+
+File aplikasi disimpan pada server hosting dan database menggunakan database yang tersedia pada server tersebut. Document root juga menyesuaikan dengan struktur hosting, seperti "public_html" atau folder "public".
+
+Pada lingkungan production, keamanan menjadi hal yang lebih penting. HTTPS sebaiknya digunakan untuk melindungi data selama proses pengiriman. Error yang berisi informasi sensitif juga tidak sebaiknya ditampilkan kepada pengguna.
+
+3. Perbedaan Utama
+
+Localhost digunakan untuk proses pembuatan dan pengujian aplikasi secara lokal, sedangkan hosting digunakan untuk menjalankan aplikasi yang dapat diakses melalui internet.
+
+Pada localhost, file berada di komputer mahasiswa dan umumnya hanya dapat diakses dari komputer tersebut. Pada hosting, file berada di server sehingga aplikasi dapat digunakan oleh pengguna melalui internet.
+
+Local development biasanya tidak membutuhkan biaya tambahan karena menggunakan sumber daya komputer sendiri. Sebaliknya, hosting umumnya membutuhkan biaya sesuai layanan server yang digunakan, meskipun tersedia juga beberapa layanan hosting gratis.
+
+4. Keamanan dan Data
+
+Informasi seperti password, credential, API key, dan data pribadi tidak boleh dibagikan secara sembarangan. Data latihan sebaiknya menggunakan data fiktif.
+
+Penggunaan metode POST juga tidak berarti data otomatis aman. Jika data dikirim melalui internet, HTTPS tetap diperlukan untuk membantu melindungi data selama proses pengiriman.
+
+5. Kesimpulan
+
+Localhost dan hosting memiliki fungsi yang berbeda. Localhost digunakan untuk membangun serta menguji aplikasi pada komputer sendiri, sedangkan hosting digunakan untuk mempublikasikan aplikasi agar dapat diakses melalui internet.
+
+Saat aplikasi KursusKu dipindahkan dari local ke hosting, beberapa konfigurasi perlu disesuaikan, seperti URL, koneksi database, environment, document root, dan HTTPS. Oleh karena itu, pemahaman mengenai kedua lingkungan tersebut penting sebelum aplikasi dipublikasikan.

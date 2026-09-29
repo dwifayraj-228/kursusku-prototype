@@ -1,0 +1,49 @@
+Test Matrix
+
+Load Form
+Status: Lulus
+Catatan: Halaman pendaftaran dapat dibuka dengan baik tanpa muncul pesan error.
+
+Required
+Status: Lulus
+Catatan: Data tidak dapat dikirim sebelum semua bagian yang wajib diisi dilengkapi.
+
+Email
+Status: Lulus
+Catatan: Browser memberikan peringatan ketika format email yang dimasukkan tidak sesuai.
+
+Nama Pendek
+Status: Lulus
+Catatan: Pengisian nama yang terlalu pendek tidak dapat dilanjutkan ke proses submit.
+
+GET
+Status: Lulus
+Catatan: Data yang dikirim dengan GET dapat dilihat langsung melalui URL.
+
+POST
+Status: Lulus
+Catatan: Pengiriman menggunakan POST berjalan dengan baik dan data tidak ditampilkan di URL.
+
+Radio Button
+Status: Lulus
+Catatan: Pilihan Mahasiswa atau Umum berhasil diterima dan ditampilkan pada hasil.
+
+Checkbox
+Status: Lulus
+Catatan: Pilihan minat yang dipilih dapat diterima lebih dari satu dan ditampilkan pada hasil.
+
+Textarea
+Status: Lulus
+Catatan: Catatan yang dimasukkan pada form berhasil muncul kembali di halaman hasil.
+
+Hidden
+Status: Lulus
+Catatan: Nilai week-05 tetap terkirim meskipun field tidak terlihat pada form.
+
+Mobile
+Status: Lulus
+Catatan: Form dapat menyesuaikan tampilan pada layar dengan ukuran sekitar 360 px.
+
+Navigasi
+Status: Lulus
+Catatan: Menu yang tersedia dapat digunakan dan masing-masing mengarah ke halaman yang dituju.
