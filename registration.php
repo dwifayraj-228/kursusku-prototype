@@ -14,6 +14,12 @@
       <a href="index.php">Beranda</a>
       <a href="index.php#katalog">Katalog</a>
       <a href="registration.php">Daftar</a>
+      <a href="index.php#alur">Cara Daftar</a>
+      <a href="index.php#media">Media</a>
+      <a href="index.php#kontak">Kontak</a>
+      <a href="fee-calculator.php">Form P5</a>
+      <a href="registration.php">Daftar P6</a>
+      <a href="history-dummy.php">History</a>
     </nav>
   </div>
 </header>
@@ -24,7 +30,7 @@
     <p>Gunakan data latihan. Field bertanda wajib harus diisi.</p>
   </section>
   <section class="form-card">
-    <form action="process-registration.php" method="GET" class="registration-form">
+    <form action="process-registration.php" method="POST" class="registration-form">
       <input type="hidden" name="source" value="week-05">
       <div class="form-grid">
         <div class="form-group">
@@ -56,29 +62,68 @@
       </div>
 
       <fieldset class="form-group">
-        <legend>Jenis Peserta</legend>
+        <legend>Minat Tambahan</legend>
+        <label class="choice"><input type="checkbox" name="interests[]" value="ui-ux"> UI/UX</label>
+        <label class="choice"><input type="checkbox" name="interests[]" value="database"> Database</label>
+        <label class="choice"><input type="checkbox" name="interests[]" value="backend"> Backend</label>
+         <label class="choice"><input type="checkbox" name="interests[]" value="frontend"> Frontend</label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>Tipe Peserta</legend>
         <label class="choice">
           <input type="radio" name="participant_type" value="mahasiswa" required> Mahasiswa
         </label>
         <label class="choice">
           <input type="radio" name="participant_type" value="umum"> Umum
         </label>
+          <label class="choice">
+          <input type="radio" name="participant_type" value="Guru"> Guru
+        </label>
       </fieldset>
 
-      <fieldset class="form-group">
-        <legend>Minat Tambahan</legend>
-        <label class="choice"><input type="checkbox" name="interests[]" value="ui-ux"> UI/UX</label>
-        <label class="choice"><input type="checkbox" name="interests[]" value="database"> Database</label>
-        <label class="choice"><input type="checkbox" name="interests[]" value="backend"> Backend</label>
-      </fieldset>
+    <div class="form-grid">
+    <div class="form-group">
+    <label for="learning_method">Metode Belajar</label>
+    <select id="learning_method" name="learning_method" required>
+        <option value="">-- Pilih metode --</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+        <option value="hybrid">Hybrid (Online + Offline)</option>
+       </select>
+     </div>
 
+<div class="form-group">
+    <label for="package_count">Jumlah Paket</label>
+    <select id="package_count" name="package_count" required>
+      <option value="1">1 paket</option>
+      <option value="2">2 paket</option>
+      <option value="3">3 paket</option>
+    </select>
+  </div>
+</div>
+    
       <div class="form-group">
         <label for="note">Catatan</label>
         <textarea id="note" name="note" rows="5" maxlength="300" placeholder="Tuliskan kebutuhan belajar Anda (opsional)"></textarea>
         <small class="help">Maksimal 300 karakter.</small>
       </div>
 
-      <button class="btn-primary" type="submit">Kirim Pendaftaran</button>
+<section class="summary-card">
+    <h2>Fasilitas</h2>
+    <ul class="facility-list">
+      <li>Modul digital</li>
+      <li>Sertifikat penyelesaian</li>
+      <li>Forum diskusi kelas</li>
+    </ul>
+  </section>
+
+  <div class="action-buttons">
+  <button class="btn-primary" type="submit">Proses Pendaftaran</button>
+  <a href="history-dummy.php" class="btn-link">History Dummy</a>
+  <a href="loop-lab.php" class="btn-link">Loop Lab</a>
+</div>
+
     </form>
   </section>
 </main>

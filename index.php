@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 require_once __DIR__ . '/helpers.php';
 
 $courses = [
@@ -10,8 +9,6 @@ $courses = [
     ['code' => 'DB-01', 'name' => 'MySQL Dasar', 'fee' => 275000, 'quota' => 20, 'registered' => 0, 'start_date' => '2026-10-01'],
     ['code' => 'UI-01', 'name' => 'UI Web Dasar', 'fee' => 225000, 'quota' => 35, 'registered' => 9, 'start_date' => '2026-10-03'],
 ];
-=======
->>>>>>> fc3496f319df811bfb0c8aca588f7e401baee9e7
 
 $siteName = "KursusKu";
 $tagline = "Belajar Teknologi, Bangun Masa Depan";
@@ -35,6 +32,12 @@ $tahun = date("Y");
     rel="stylesheet"
     href="assets/css/style.css">
 </head>
+
+<style>
+  .course-card h3 {
+    color: #2563a6 !important;
+  }
+</style>
 
 <body>
   <header class="header">
@@ -61,10 +64,21 @@ $tahun = date("Y");
 
       <a href="#kursus">Kursus</a>
 
+      <a href="#keunggulan">Keunggulan</a>
+
       <a href="#tentang">Tentang</a>
 
       <a href="#kontak">Kontak</a>
 
+      <a href="index.php#alur">Cara Daftar</a>
+      
+      <a href="index.php#media">Media</a>
+    
+      <a href="fee-calculator.php">Form P5</a>
+      
+      <a href="registration.php">Daftar P6</a>
+      
+      <a href="history.php">History</a>
     </div>
 
   </nav>
@@ -95,14 +109,11 @@ $tahun = date("Y");
               Lihat Kursus
             </a>
 
-<<<<<<< HEAD
             <a
               href="fee-calculator.php"
               class="button">Lihat Estimasi Biaya
             </a>
 
-=======
->>>>>>> fc3496f319df811bfb0c8aca588f7e401baee9e7
           </div>
 
           <div>
@@ -119,16 +130,10 @@ $tahun = date("Y");
       </div>
 
     </section>
-<<<<<<< HEAD
-
-    <!-- ===== SECTION KATALOG — DIGANTI DENGAN TABEL DINAMIS ===== -->
-=======
->>>>>>> fc3496f319df811bfb0c8aca588f7e401baee9e7
     <section id="kursus" class="section">
 
       <div class="container">
 
-<<<<<<< HEAD
         <h2>Katalog Kursus</h2>
 
         <table>
@@ -159,7 +164,7 @@ $tahun = date("Y");
             <?php endforeach; ?>
           </tbody>
         </table>
-=======
+
         <h2>Program Kursus</h2>
 
         <div class="course-grid">
@@ -200,16 +205,11 @@ $tahun = date("Y");
           </article>
 
         </div>
->>>>>>> fc3496f319df811bfb0c8aca588f7e401baee9e7
 
       </div>
 
     </section>
-<<<<<<< HEAD
-    <!-- ===== AKHIR SECTION KATALOG ===== -->
 
-=======
->>>>>>> fc3496f319df811bfb0c8aca588f7e401baee9e7
     <section id="tentang" class="section section-light">
 
       <div class="container">
@@ -235,6 +235,93 @@ $tahun = date("Y");
         </a>
 
       </div>
+
+<section id="keunggulan" class="section">
+
+  <div class="container">
+
+    <h2>Keunggulan KursusKu</h2>
+
+    <div class="course-grid">
+
+      <article class="course-card">
+        <h3>Materi Praktis</h3>
+        <p>
+          Materi pembelajaran dibuat sederhana
+          dan mudah dipahami.
+        </p>
+      </article>
+
+      <article class="course-card">
+        <h3>Belajar Fleksibel</h3>
+        <p>
+          Peserta dapat memilih metode belajar
+          sesuai kebutuhan.
+        </p>
+      </article>
+
+      <article class="course-card">
+        <h3>Biaya Terjangkau</h3>
+        <p>
+          Pilihan kursus tersedia dengan biaya
+          yang sesuai untuk mahasiswa.
+        </p>
+      </article>
+
+      <article class="course-card">
+        <h3>Berbasis Teknologi</h3>
+        <p>
+          Pembelajaran berfokus pada teknologi
+          dan keterampilan pemrograman web.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="alur" class="section">
+
+  <div class="container">
+
+    <h2>Cara Daftar</h2>
+
+    <p>
+      Daftar di KursusKu dengan memilih kursus,
+      mengisi data, memilih paket, dan mengonfirmasi pendaftaran.
+    </p>
+
+    <div class="course-grid">
+
+      <article class="course-card">
+        <h3>1. Pilih Kursus</h3>
+        <p>Pilih kursus yang sesuai dengan kebutuhan.</p>
+      </article>
+
+      <article class="course-card">
+        <h3>2. Isi Data</h3>
+        <p>Isi data diri pada formulir pendaftaran.</p>
+      </article>
+
+      <article class="course-card">
+        <h3>3. Pilih Paket</h3>
+        <p>Tentukan jumlah paket kursus.</p>
+      </article>
+
+      <article class="course-card">
+        <h3>4. Konfirmasi</h3>
+        <p>Periksa data dan selesaikan pendaftaran.</p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
 
     </section>
     <section class="section">
