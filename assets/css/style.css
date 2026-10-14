@@ -1,3 +1,9 @@
+/* Pusatkan konten utama di semua halaman (kecuali index.php) */
+:where(body > main[class]) {
+  max-width: 760px;
+  margin: 2rem auto;
+}
+
 * { box-sizing: border-box; }
 
 body {

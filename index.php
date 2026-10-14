@@ -66,7 +66,7 @@ $tahun = date("Y");
 
       <a href="#keunggulan">Keunggulan</a>
 
-      <a href="#tentang">Tentang</a>
+      <a href="#kursus">Katalog</a>
 
       <a href="#kontak">Kontak</a>
 

@@ -1,6 +1,6 @@
 <?php
+date_default_timezone_set('Asia/Jakarta');
 $serverTime = date('Y-m-d H:i:s');
-echo 'Waktu server: ' . $serverTime;
 ?>
 <!doctype html>
 <html lang="id">
@@ -12,10 +12,21 @@ echo 'Waktu server: ' . $serverTime;
 </head>
 <body class="utility-page">
 <main class="utility-card">
-    <span class="eyebrow">PERTEMUAN 2</span>
+    <span class="eyebrow"></span>
+
     <h1>PHP Diproses oleh Server</h1>
-    <p class="server-time">Waktu server: <strong><?= htmlspecialchars($serverTime) ?></strong></p>
-    <p>Refresh halaman beberapa detik kemudian. Nilai berubah karena fungsi <code>date()</code> dijalankan ulang oleh PHP pada setiap request.</p>
+
+    <p class="server-time">
+        Waktu server:
+        <strong><?= htmlspecialchars($serverTime) ?></strong>
+    </p>
+
+    <p>
+        Refresh halaman beberapa detik kemudian. Nilai berubah
+        karena fungsi <code>date()</code> dijalankan ulang oleh PHP
+        pada setiap request.
+    </p>
+
     <a class="button" href="index.php">Kembali ke Beranda</a>
 </main>
 </body>

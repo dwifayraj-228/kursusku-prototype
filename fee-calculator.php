@@ -1,9 +1,9 @@
 <?php
 $courseName = 'Laravel Fundamental';
-$fee = 2500000;
-$participantCount = 3;
+$fee = 350000;
+$participantCount = 2;
 $discountPercent = 10;
-$adminFee = 50000;
+$adminFee = 25000;
 
 $subtotal = $fee * $participantCount;
 $discount = intdiv($subtotal * $discountPercent, 100);
